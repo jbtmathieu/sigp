@@ -60,7 +60,7 @@ public class CreerCollaborateursController extends HttpServlet{
 			}
            if (count != 15 ) {
         	   resp.setStatus(400);
-               resp.getWriter().print("Les parametres sont incorrects: "+"Numéro de SS < 15 ");
+               resp.getWriter().print("Les paramètres sont incorrects: "+"Numéro de SS différent de 15 caractères");
            }else {
         	   
         	  
@@ -76,7 +76,7 @@ public class CreerCollaborateursController extends HttpServlet{
 	       	   birthDate= LocalDate.parse(date, formatter);
 	       	  } catch (Exception E) {
 	       		resp.setStatus(400);
- 	            resp.getWriter().print("Les parametres sont incorrects: "+"ce n'est pas une date valide : dd/MM/yyyy");
+ 	            resp.getWriter().print("Les parametres sont incorrects : "+"format attendu : dd/MM/yyyy");
  	          }
 	       	 
 	           StringBuilder email = new StringBuilder();
