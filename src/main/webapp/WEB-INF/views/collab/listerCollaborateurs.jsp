@@ -48,7 +48,7 @@
 			 %> 
 			 <%-- 
 			 <c:forEach var="collab" items="${Constantes.COLLAB_SERVICE.listeCollaborateurs}" >
-     			${collaborateur}<br>
+     			${collaborateur}
      			<li><ul><li><c:out value="${listeCollab.get(collab).getNom()}"/></li>
      			<%=collaborateurs.get(0).getPrenom() %>
 				<li><c:out value="${collab.getPrenom}"/></li>

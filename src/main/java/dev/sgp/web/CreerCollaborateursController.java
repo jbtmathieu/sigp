@@ -64,7 +64,7 @@ public class CreerCollaborateursController extends HttpServlet{
            }else {
         	   
         	  
-	           STATIC_ID++;
+	           
 	           
 	           DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	
@@ -87,6 +87,8 @@ public class CreerCollaborateursController extends HttpServlet{
 	           email.append(SOCIETY_NAME);
 	           email.append(".com");
             
+	           
+	           STATIC_ID++;
 	           Collaborateur collab = new Collaborateur(
         		   STATIC_ID,
         		   req.getParameter("Name"), 
